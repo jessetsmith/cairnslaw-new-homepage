@@ -489,6 +489,8 @@ header p {
     color: #4468ca;
 }
 
+@media screen and (max-width: 400px) {}
+
 
 /* Row */
 
@@ -2178,7 +2180,7 @@ input[type="radio"]:focus+label:before {
 .scale {
     position: absolute;
     z-index: 3;
-    margin-left: -1.15em;
+    margin-left: -.65em;
     margin-top: .2em;
 }
 
@@ -3964,7 +3966,7 @@ body.is-preload #banner:before {
         height: 65%;
     }
     .scale {
-        margin-left: -1.25em;
+        margin-left: -.77em;
     }
 }
 
