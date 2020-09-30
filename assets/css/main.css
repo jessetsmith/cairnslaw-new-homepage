@@ -3851,26 +3851,44 @@ body.is-preload #banner:before {
     opacity: 1;
 }
 
+@media screen and (max-width: 1200px) {
+    #banner>.inner h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #banner>.inner h1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
 @media screen and (max-width: 980px) {
     #banner {
         background-attachment: scroll;
         height: 80vh;
         min-height: 35rem;
     }
+    .banners-1 {
+        background-position: center right;
+        background-size: cover;
+    }
     #banner>.inner {
         margin: 0 auto;
         max-width: 35rem;
     }
     #banner>.inner h1 {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
     #banner>.inner p {
         font-size: 1.25rem;
     }
     #banner>.inner .icon {
         border-radius: 100%;
-        border: 1px solid #ffffff;
-        color: #ffffff;
+        border: 1px solid black;
+        color: black;
         display: block;
         font-size: 3rem;
         height: 6rem;
@@ -3882,17 +3900,29 @@ body.is-preload #banner:before {
     }
 }
 
+@media screen and (max-width: 800px) {
+    #banner>.inner h1 {
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+}
+
 @media screen and (max-width: 736px) {
     #banner {
         height: auto;
         min-height: 38rem;
     }
+    #banner>.backdrop {
+        width: 45%;
+        height: 65%;
+    }
     #banner>.inner {
-        padding: 0 1.5rem;
+        padding: 2em;
     }
     #banner>.inner h1 {
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 3rem;
+        width: 50%;
     }
     #banner>.inner br {
         display: none;
@@ -3902,6 +3932,39 @@ body.is-preload #banner:before {
     }
     #banner>.inner .icon {
         margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #banner>.inner h1 {
+        font-size: 1rem;
+        line-height: 3rem;
+        width: 55%;
+    }
+    #banner>.backdrop {
+        width: 60%;
+        height: 65%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #banner {
+        height: 50vh;
+    }
+    .banners-1 {
+        /* background-image: url("/images/cairns-banner.png"); */
+        background-position: center right -27em;
+        background-size: cover;
+    }
+    #banner>.inner h1 {
+        width: 90%;
+    }
+    #banner>.backdrop {
+        width: 95%;
+        height: 65%;
+    }
+    .scale {
+        margin-left: -1.25em;
     }
 }
 
