@@ -3792,7 +3792,7 @@ body.is-menu-visible #menu {
 
 hr {
     margin: .5rem;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
 }
 
 #banner>.inner> :last-child {
@@ -3809,7 +3809,7 @@ hr {
     font-size: 2.3rem;
     line-height: 5rem;
     font-family: 'Kumbh Sans', sans-serif;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -3821,7 +3821,7 @@ hr {
 
 #banner>.inner .icon {
     border-radius: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
     color: black;
     display: block;
     font-size: 3.5rem;
@@ -3864,7 +3864,29 @@ body.is-preload #banner:before {
     opacity: 1;
 }
 
+@media screen and (min-width: 1500px) {
+    .scale {
+        margin-left: -.55em;
+        margin-top: .3em;
+    }
+}
+
+@media screen and (min-width: 1450px)and(max-width: 1500px) {
+    .scale {
+        margin-left: -.56em;
+    }
+}
+
+@media screen and (min-width: 1350px)and(max-width: 1450px) {
+    .scale {
+        margin-left: -.65em;
+    }
+}
+
 @media screen and (max-width: 1200px) {
+    /* .scale {
+        margin-left: -.65em;
+    } */
     #banner>.inner h1 {
         font-size: 2rem;
         line-height: 3rem;
