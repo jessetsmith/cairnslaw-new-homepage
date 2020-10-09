@@ -3512,6 +3512,11 @@ body.is-menu-visible #menu {
     background-size: cover;
 }
 
+#contact-btn {
+    width: 20em;
+    margin-top: -1em;
+}
+
 .banners-2 {
     background-attachment: fixed;
     background-image: url("../../images/scott-graham-OQMZwNd3ThU-unsplash.jpg");
@@ -3753,7 +3758,7 @@ body.is-menu-visible #menu {
 
 #banner>.backdrop {
     position: absolute;
-    width: 45%;
+    width: 40%;
     height: 85%;
     background-color: white;
     opacity: .5;
@@ -3785,6 +3790,11 @@ body.is-menu-visible #menu {
     padding: 2em;
 }
 
+hr {
+    margin: .5rem;
+    border-top: 1px solid black;
+}
+
 #banner>.inner> :last-child {
     margin-bottom: 0;
 }
@@ -3796,10 +3806,11 @@ body.is-menu-visible #menu {
 }
 
 #banner>.inner h1 {
-    font-size: 2.5rem;
-    line-height: 4rem;
+    font-size: 2.3rem;
+    line-height: 5rem;
     font-family: 'Kumbh Sans', sans-serif;
     color: black;
+    font-weight: bold;
 }
 
 #banner>.inner p {
@@ -3858,6 +3869,10 @@ body.is-preload #banner:before {
         font-size: 2rem;
         line-height: 3rem;
     }
+    #banner>.backdrop {
+        width: 50%;
+        height: 70%;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -3880,6 +3895,10 @@ body.is-preload #banner:before {
     #banner>.inner {
         margin: 0 auto;
         max-width: 35rem;
+    }
+    #banner>.backdrop {
+        width: 45%;
+        height: 75%;
     }
     #banner>.inner h1 {
         font-size: 1.3rem;
@@ -3914,9 +3933,13 @@ body.is-preload #banner:before {
         height: auto;
         min-height: 38rem;
     }
+    .banners-1 {
+        background-position: center left;
+        background-size: cover;
+    }
     #banner>.backdrop {
-        width: 45%;
-        height: 65%;
+        width: 50%;
+        height: 90%;
     }
     #banner>.inner {
         padding: 2em;
@@ -3937,6 +3960,18 @@ body.is-preload #banner:before {
     }
 }
 
+@media screen and (max-width: 660px) {
+    #banner>.inner h1 {
+        font-size: 1rem;
+        line-height: 3rem;
+        width: 55%;
+    }
+    #banner>.backdrop {
+        width: 60%;
+        height: 90%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #banner>.inner h1 {
         font-size: 1rem;
@@ -3945,7 +3980,19 @@ body.is-preload #banner:before {
     }
     #banner>.backdrop {
         width: 60%;
-        height: 65%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #banner>.inner h1 {
+        font-size: 1rem;
+        line-height: 3rem;
+        width: 55%;
+    }
+    #banner>.backdrop {
+        width: 70%;
+        height: 90%;
     }
 }
 
@@ -3962,11 +4009,32 @@ body.is-preload #banner:before {
         width: 90%;
     }
     #banner>.backdrop {
-        width: 95%;
-        height: 65%;
+        width: 80%;
+        height: 80%;
     }
     .scale {
         margin-left: -.77em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #banner>.inner h1 {
+        font-size: 1rem;
+        line-height: 3rem;
+        width: 55%;
+    }
+    #banner>.backdrop {
+        width: 90%;
+        height: 90%;
+    }
+    #banner2-ul {
+        margin-top: -1em;
+    }
+    #banner>.backdrop-2 {
+        height: 90%;
+    }
+    #banner2-btn {
+        margin-top: -5em;
     }
 }
 
@@ -3994,6 +4062,10 @@ body.is-preload #banner:before {
 
 
 /* Footer */
+
+#form-btn {
+    background-color: #888888;
+}
 
 #footer {
     padding: 6rem 0 4rem 0;
